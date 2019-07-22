@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
 </head>
 
@@ -33,6 +34,55 @@
     </header>
     <main class="page-main">
         <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <section class="history">
+          <h2 class="history__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
+          <form class="history__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="name">
+                <label class="name__label" for="surname">Фамилия:</label>
+                <input class="name__form" id="surname" type="text" placeholder="Укажите фамилию *" required>
+                <label class="name__label" for="name">Имя:</label>
+                <input class="name__form" id="name" type="text" placeholder="Введите ваше имя *" required>
+                <label class="name__label" for="middle_name">Отчество:</label>
+                <input class="name__form" id="middle_name" type="text" placeholder="Ну и отчество тоже">
+            </div>
+            <div class="advance">
+                <h3 class="advance__title">Ваши безбашенные достижения в путешествии</h3>
+                <label class="advance__name" for="selfie">Сделал селфи с акулой</label>
+                <input class="advance__checkbox" id="selfie" type="checkbox" checked>
+                <label class="advance__name" for="beach">Обгорел на пляже</label>
+                <input class="advance__checkbox" id="beach" type="checkbox" checked>
+                <label class="advance__name" for="chuck_norris">Видел Чака Норриса</label>
+                <input class="advance__checkbox" id="chuck_norris" type="checkbox">
+                <label class="advance__name" for="souvenirs">Накупил сувениров</label>
+                <input class="advance__checkbox" id="souvenirs" type="checkbox">
+                <label class="advance__name" for="tower">Удержал башню</label>
+                <input class="advance__checkbox" id="tower" type="checkbox" checked>
+                <label class="advance__name" for="hotel">Разгромил отель</label>
+                <input class="advance__checkbox" id="hotel" type="checkbox">
+            </div>
+            <div class="communications">
+                <label class="communications__label" for="phone">Номер телефона</label>
+                <input class="communications__form" id="phone" type="tel" placeholder="Номер, пожалуйста">
+                <label class="communications__label" for="mail">Адрес почты</label>
+                <input class="communications__form" id="mail" type="email" placeholder="Введите почту *" required>
+            </div>
+            <div class="application">
+                <h3 class="application__title">С каким приложением путешествовали?</h3>
+                <label class="application__name" for="iOS">Pink для iOS</label>
+                <input class="application__checkbox" id="iOS" type="checkbox" checked>
+                <label class="application__name" for="android">Pink на Android</label>
+                <input class="application__checkbox" id="android" type="checkbox">
+                <label class="application__name" for="windows">Windows Phone</label>
+                <input class="application__checkbox" id="windows" type="checkbox">
+              </div>
+              <div class="emotions">
+                <h3 class="emotions__title">Опишите свои эмоции</h3>
+                <textarea class="emotions__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+              <button class="history__button" type="submit">Отправить форму</button>
+            </form>
+            <span class="history__required">* — обязательные поля</span>
+        </section>
     </main>
     <footer class="footer">
         <img class="footer__logo" src="http://placehold.it" width="147" height="40" alt="Логoтип Pink">
